@@ -3,23 +3,251 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>StorknStork — Games</title>
-<link rel="stylesheet" href="/style.css">
+<title>StorknStork — Tinker Survival IO</title>
+<meta name="description" content="StorknStork is a small indie studio making casual mobile games. Tinker Survival IO is coming soon to Google Play and the App Store.">
+<meta name="theme-color" content="#700C8E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tinker Survival IO — by StorknStork">
+<meta property="og:description" content="Fuse your plants, survive the zombie horde. Coming soon to Android and iOS.">
+<!-- Ảnh xem trước khi chia sẻ link (1200x630) -->
+<meta property="og:image" content="https://storknstork.com/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:url" content="https://storknstork.com/">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" href="img/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="img/favicon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="home.css">
 </head>
-<body>
-<main>
-  <h1>StorknStork</h1>
-  <p class="meta">Independent mobile game developer.</p>
+<body class="home">
 
-  <h2>Tinker Survival IO</h2>
-  <ul>
-    <li><a href="/tinker-survival-io/privacy.html">Privacy Policy</a></li>
-    <li><a href="/tinker-survival-io/terms.html">Terms of Service</a></li>
-    <li><a href="/tinker-survival-io/delete-account.html">Delete your account</a></li>
-  </ul>
+<header class="topbar">
+  <a class="brand" href="#top">StorknStork</a>
+  <nav aria-label="Main">
+    <a href="#game">Game</a>
+    <a href="#whats-new">What's new</a>
+    <a href="#about">About</a>
+    <a href="#support">Support</a>
+  </nav>
+</header>
 
-  <h2>Contact</h2>
-  <p>Support: <a href="mailto:support@storknstork.com">support@storknstork.com</a></p>
+<main id="top">
+  <!-- HERO -->
+  <section class="hero" id="game">
+    <span class="deco d1" aria-hidden="true">🍃</span>
+    <span class="deco d2" aria-hidden="true">✨</span>
+    <span class="deco d3" aria-hidden="true">🍃</span>
+    <span class="deco d4" aria-hidden="true">✨</span>
+    <span class="deco zed z1" aria-hidden="true">🧟</span>
+    <span class="deco zed z2" aria-hidden="true">🧟</span>
+
+    <div class="hero-inner">
+      <div class="hero-art">
+        <img class="mascot" src="img/mascot.png" alt="Tinker, the gardener hero of Tinker Survival IO" width="1003" height="1568">
+      </div>
+      <div class="hero-text">
+        <img class="logo" src="img/logo.png" alt="Tinker Survival IO logo" width="800" height="400">
+        <h1 class="headline">Fuse your plants.<br>Survive the horde!</h1>
+        <p class="subline">A casual survivor game where tiny plants fight big zombie waves. Free to play on Android and iOS.</p>
+        <div class="cta">
+          <div class="store-row lg" data-stores><!-- Nút cửa hàng: bật/tắt trong stores.js --></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wave-divider in-hero" style="--top:transparent;--band:#4fbf3a;--front:#8be04e" aria-hidden="true">
+      <svg viewBox="0 0 1440 160" preserveAspectRatio="none"><path class="w-band" d="M0 70C240 10 480 10 720 60S1200 120 1440 40V160H0Z"/><path class="w-front" d="M0 110C260 60 520 70 760 105S1220 140 1440 95V160H0Z"/></svg>
+    </div>
+  </section>
+
+  <!-- FEATURES: mascot trái 3 / nội dung phải 7 -->
+  <section class="band band-green horde-glow" aria-label="Highlights" data-deco="🪦 🧠 🌙" data-deco-count="14">
+    <h2 class="section-title title-center">Why you'll love it</h2>
+    <div class="container split cast-left">
+      <div class="split-art">
+        <div class="cast cast-wide anim-shamble" aria-hidden="true"><img src="img/three_zombie.png" alt="" width="512" height="512" loading="lazy"></div>
+      </div>
+      <div class="split-body">
+        <div class="features">
+          <article class="card row c-red">
+            <div class="card-head"><span class="icon" aria-hidden="true">🧟</span></div>
+            <div class="card-text"><h3>Survive the horde</h3><p>Hold your ground as waves of zombies grow bigger every minute.</p></div>
+          </article>
+          <article class="card row c-green">
+            <div class="card-head"><span class="icon" aria-hidden="true">🌱</span></div>
+            <div class="card-text"><h3>Fuse your plants</h3><p>Combine weapons into powerful fusions and build your own style.</p></div>
+          </article>
+          <article class="card row c-blue">
+            <div class="card-head"><span class="icon" aria-hidden="true">⭐</span></div>
+            <div class="card-text"><h3>Grow stronger</h3><p>Collect gear and upgrades between runs to take on tougher stages.</p></div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wave-divider" style="--top:#8be04e;--band:#e8b800;--front:#ffd23f" aria-hidden="true">
+    <svg class="flip" viewBox="0 0 1440 160" preserveAspectRatio="none"><path class="w-band" d="M0 70C240 10 480 10 720 60S1200 120 1440 40V160H0Z"/><path class="w-front" d="M0 110C260 60 520 70 760 105S1220 140 1440 95V160H0Z"/></svg>
+  </div>
+
+  <!-- GAMEPLAY: các khối clip có khung + bảng tên, so le trái/phải -->
+  <section class="band band-yellow" id="gameplay" aria-label="Gameplay" data-deco="🌱 💥 ⚡" data-deco-count="16">
+    <div class="container">
+      <h2 class="section-title title-center">Gameplay</h2>
+      <div class="showcase">
+          <article class="show-item">
+            <div class="show-frame">
+              <span class="show-plate">Survive the Horde</span>
+              <!-- CLIP: thả img/clip-horde.mp4 (+ .webm nếu có); poster tạm img/clip-horde.svg -->
+              <video class="gp-video" muted loop playsinline preload="none" poster="img/clip-horde.svg" aria-label="Survive the Horde gameplay clip" width="960" height="540">
+                <source src="img/clip-horde.webm" type="video/webm">
+                <source src="img/clip-horde.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="show-card c-red">
+              <!-- STICKER: Graveyard Hound (bản nén từ img/GraveyardHound.png) -->
+              <img class="sticker" src="img/sticker-hound.png" alt="" aria-hidden="true" loading="lazy">
+              <span class="show-num" aria-hidden="true">1</span>
+              <h3>Waves never stop.</h3>
+              <p>Zombies keep coming, and every minute the waves get bigger. Keep moving, keep shooting, hold your ground.</p>
+              <ul class="chips"><li>🧟 Endless waves</li><li>🎯 Auto-aim</li></ul>
+            </div>
+          </article>
+          <article class="show-item rev">
+            <div class="show-frame">
+              <span class="show-plate">Fuse Your Plants</span>
+              <!-- CLIP: thả img/clip-fusion.mp4 (+ .webm nếu có); poster tạm img/clip-fusion.svg -->
+              <video class="gp-video" muted loop playsinline preload="none" poster="img/clip-fusion.svg" aria-label="Fuse Your Plants gameplay clip" width="960" height="540">
+                <source src="img/clip-fusion.webm" type="video/webm">
+                <source src="img/clip-fusion.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="show-card c-green">
+              <!-- STICKER: Sunny Ray (bản nén từ img/sunnyray.png) -->
+              <img class="sticker" src="img/sticker-sunny.png" alt="" aria-hidden="true" loading="lazy">
+              <span class="show-num" aria-hidden="true">2</span>
+              <h3>Two plants, one combo.</h3>
+              <p>Level up to pick new plant weapons, then fuse two of them into a powerful combo with its own twist.</p>
+              <ul class="chips"><li>🌱 New weapons</li><li>⚡ Fusions</li></ul>
+            </div>
+          </article>
+          <article class="show-item">
+            <div class="show-frame">
+              <span class="show-plate">Beat the Boss</span>
+              <!-- CLIP: thả img/clip-boss.mp4 (+ .webm nếu có); poster tạm img/clip-boss.svg -->
+              <video class="gp-video" muted loop playsinline preload="none" poster="img/clip-boss.svg" aria-label="Beat the Boss gameplay clip" width="960" height="540">
+                <source src="img/clip-boss.webm" type="video/webm">
+                <source src="img/clip-boss.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="show-card c-blue">
+              <!-- STICKER: Spike Club (bản nén từ img/spikeclub.png) -->
+              <img class="sticker" src="img/sticker-spike.png" alt="" aria-hidden="true" loading="lazy">
+              <span class="show-num" aria-hidden="true">3</span>
+              <h3>Then the big one shows up.</h3>
+              <p>Every stage ends with a giant boss. Survive, power up, and take it down to clear the stage.</p>
+              <ul class="chips"><li>👑 Boss fights</li><li>🗺️ New stages</li></ul>
+            </div>
+          </article>
+      </div>
+      <div class="showcase-cta">
+        <div class="store-row lg" data-stores><!-- Nút cửa hàng: bật/tắt trong stores.js --></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wave-divider" style="--top:#ffd23f;--band:#f2deb0;--front:#fff6df" aria-hidden="true">
+    <svg viewBox="0 0 1440 160" preserveAspectRatio="none"><path class="w-band" d="M0 70C240 10 480 10 720 60S1200 120 1440 40V160H0Z"/><path class="w-front" d="M0 110C260 60 520 70 760 105S1220 140 1440 95V160H0Z"/></svg>
+  </div>
+
+  <!-- WHAT'S NEW: mascot trái 3 / nội dung phải 7 -->
+  <section class="band band-cream" id="whats-new" aria-label="What's new" data-deco="🎉 📣 ⭐" data-deco-count="12">
+    <div class="container split cast-left">
+      <div class="split-art">
+        <div class="cast cast-pea anim-recoil" aria-hidden="true"><img src="img/pea_painter.png" alt="" width="1254" height="1254" loading="lazy"></div>
+      </div>
+      <div class="split-body">
+        <h2 class="section-title">What's new</h2>
+        <!-- Nội dung lấy từ updates-data.js (bản mới nhất). Sửa file đó, không sửa ở đây. -->
+        <div class="updates-latest" data-updates="latest">
+          <noscript><p>See our <a href="tinker-survival-io/updates.html">update notes</a>.</p></noscript>
+        </div>
+        <a class="see-all" href="tinker-survival-io/updates.html">See all updates →</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="wave-divider" style="--top:#fff6df;--band:#d9c2f5;--front:#efe3ff" aria-hidden="true">
+    <svg class="flip" viewBox="0 0 1440 160" preserveAspectRatio="none"><path class="w-band" d="M0 70C240 10 480 10 720 60S1200 120 1440 40V160H0Z"/><path class="w-front" d="M0 110C260 60 520 70 760 105S1220 140 1440 95V160H0Z"/></svg>
+  </div>
+
+  <!-- ABOUT: nội dung trái 7 / mascot phải 3 -->
+  <section class="band band-lilac" id="about" aria-label="About" data-deco="🎮 💜 🪶" data-deco-count="12">
+    <div class="container split cast-right">
+      <div class="split-body">
+        <h2 class="section-title">About</h2>
+        <div class="card plain about">
+          <p class="about-lead"><img class="brand-avatar" src="img/storknstork-128.jpg" alt="StorknStork logo" width="56" height="56">Hi! We're <b>StorknStork</b> 👋</p>
+          <p>A small indie studio making casual mobile games. We love games that are quick to pick up, fun to master and friendly for everyone.</p>
+          <p>Tinker Survival IO is our first game, and we keep growing it with new plants, stages and events.</p>
+        </div>
+        <!-- 3 giá trị của studio: chữ tạm, sửa thoải mái -->
+        <ul class="values">
+          <li class="value c-red"><span class="value-icon" aria-hidden="true">⚡</span><b>Quick fun</b><span>Jump in for a few minutes, any time.</span></li>
+          <li class="value c-green"><span class="value-icon" aria-hidden="true">🎁</span><b>Free to play</b><span>Fair for everyone, no pay walls.</span></li>
+          <li class="value c-blue"><span class="value-icon" aria-hidden="true">💬</span><b>We listen</b><span>Your feedback shapes every update.</span></li>
+        </ul>
+        <div class="community">
+          <h3 class="community-title">Join the community</h3>
+          <!-- Nút mạng xã hội: sửa link trong socials.js -->
+          <div class="socials-full" data-socials="full"></div>
+        </div>
+        <div class="about-cta">
+          <a class="see-all" href="mailto:support@storknstork.com">💌 Say hi: support@storknstork.com</a>
+        </div>
+      </div>
+      <div class="split-art">
+        <!-- CAST: Smasher (thử). Muốn quay lại Spike Club: class "cast cast-spike anim-sway", src img/spikeclub.png 224x507 -->
+        <div class="cast cast-smasher anim-shamble" aria-hidden="true"><img src="img/smasher.png" alt="" loading="lazy" width="512" height="509"></div>
+      </div>
+    </div>
+  </section>
 </main>
+
+<div class="wave-divider" style="--top:#efe3ff;--band:#1d2536;--front:#2C364C" aria-hidden="true">
+  <svg viewBox="0 0 1440 160" preserveAspectRatio="none"><path class="w-band" d="M0 70C240 10 480 10 720 60S1200 120 1440 40V160H0Z"/><path class="w-front" d="M0 110C260 60 520 70 760 105S1220 140 1440 95V160H0Z"/></svg>
+</div>
+
+<footer class="site-footer has-cast" id="support" data-deco="✨ ⭐ 🌙" data-deco-count="10">
+  <div class="container">
+    <!-- CAST: thay bằng img/tinker-wave.png khi có hình -->
+    <div class="cast cast-foot anim-wave" aria-hidden="true"><img src="img/mascot.png" alt="" loading="lazy"></div>
+    <p class="foot-bye">See you in the garden!</p>
+    <p class="foot-brand"><img class="brand-avatar" src="img/storknstork-128.jpg" alt="" width="40" height="40">StorknStork</p>
+    <p>Support: <a href="mailto:support@storknstork.com">support@storknstork.com</a></p>
+    <div class="socials-icons" data-socials="icons"></div>
+    <p class="legal">
+      <a href="tinker-survival-io/privacy.html">Privacy</a>
+      <a href="tinker-survival-io/terms.html">Terms</a>
+      <a href="tinker-survival-io/delete-account.html">Delete account</a>
+    </p>
+    <p class="copy">© 2026 StorknStork</p>
+  </div>
+</footer>
+
+<!-- Nút nổi Play: link + ẩn/hiện do stores.js quyết định -->
+<a class="fab btn btn-play" id="fab" href="#game" target="_blank" rel="noopener">Play</a>
+
+<script src="updates-data.js"></script>
+<script src="updates.js"></script>
+<script src="stores.js"></script>
+<script src="home.js"></script>
+<script src="deco.js"></script>
+<script src="socials.js"></script>
 </body>
 </html>
